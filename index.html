@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        header {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            position: fixed;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav {
+            width: 100%;
+            position: fixed;
+        }
+        .logo-image {
+            width: 150px;
+        }
+        .sign-up-page {
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sign-up-form {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: white;
+            color: black;
+        }
+        .video-page {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .culture {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .scheduling {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .drills {
+            width: 20%;
+            height: 600px;
+            display: block;
+            justify-content: center;
+            align-content: center;
+        }
+        .pricing {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        @media only screen and (max-width: 600px) {
+            nav {
+                display: none;
+            }
+        }
+    </style>
+   </head>
+   <body>
+      <header id="header">
+          <img class="logo-image" id="header-img" src="https://img.pngio.com/to-domi-outline-all-black-nike-american-football-logo-free-png-nike-football-logos-920_1194.png" alt="Football Camp">
+          <nav id="nav-bar">
+              <ul>
+                <li><a class="nav-link" href="#culture">Culture</a></li>
+                <li><a class="nav-link" href="#scheduling">Scheduling</a></li>
+                <li><a class="nav-link" href="#drills">Drills</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <section class="sign-up-page">
+        <form class="sign-up-form" id="form" action="https://www.freecodecamp.com/email-submit">
+            <h1>Sign Up Here</h1>
+               <input id="email" type="email" name="email" placeholder="email@gametime.com" required>
+            <br>
+                <input type="submit" id="submit">
+        </form>
+      </section>
+      <div class="video-page">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/3OvbevLE-lw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="culture" id="culture">
+          <img src="images/Football-Culture.jpg" alt="Football Culture">
+      </div>
+      <div class="scheduling" id="scheduling">
+          <img src="images/Football-Schedule.jpg" alt="Football Schedule">
+      </div>
+      <div class="drills" id="drills">
+          <img src="images/Football-Drills.jpg" alt="Football Drills">
+      </div>
+      <div class="pricing" id="pricing">
+          <img src="images/Football-Pricing.jpg" alt="pricing">
+      </div>
+   </body>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+ </html>
